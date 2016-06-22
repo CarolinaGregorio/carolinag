@@ -34,10 +34,12 @@ public class TragamonedasTest {
 		Integer posicionDelTambor1 = miTragamonedas.tambor1.getPosicion();
 		Integer posicionDelTambor2 = miTragamonedas.tambor2.getPosicion();
 		Integer posicionDelTambor3 = miTragamonedas.tambor3.getPosicion();
+		/*Correccion: Verificarlo a través de método Assert en vez de por consola.*/
+		assertEquals(posicionDelTambor1, posicionDelTambor2, posicionDelTambor3);
 		
-		System.out.println("Tambor 1: " + posicionDelTambor1);
+		/*System.out.println("Tambor 1: " + posicionDelTambor1);
 		System.out.println("Tambor 2: " + posicionDelTambor2);	
-		System.out.println("Tambor 3: " + posicionDelTambor3);
+		System.out.println("Tambor 3: " + posicionDelTambor3);		
 		
 		if (miTragamonedas.entregaPremio()) {
 			System.out.println("¡Ganaste! Retirá tu premio");
@@ -46,7 +48,7 @@ public class TragamonedasTest {
 		else{
 			System.out.println("¡Perdiste! Volvé a intentarlo");
 			
-		}
+		}*/
 			
 		}
 	
