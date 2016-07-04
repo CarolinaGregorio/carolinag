@@ -30,13 +30,5 @@ public class BarDeHomero {
 	public void setClientes(TreeSet<Cliente> clientes){
 		this.clientes = clientes;
 	}
-	
-
-	public TreeSet<Cliente> compararPorEdad() {
-		OrdenarPorEdad ordenPorEdad = new OrdenarPorEdad();
-		TreeSet<Cliente> ordenarClientes = new TreeSet<Cliente>(ordenPorEdad);
-		ordenarClientes.addAll(clientes);
-		return ordenarClientes;
-	}
 
 }
